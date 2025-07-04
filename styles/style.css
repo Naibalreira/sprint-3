@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Layout geral da página */
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  /* background-color: ffffff; */
+  color: #000000;
+}
+
+/* Bloco principal do cabeçalho */
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
+  padding: 30px 0 40px;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  margin-top: 60px;
+}
+
+.nav__logo {
+  width: 58px;
+  height: 80px;
+}
+
+.nav__links {
+  display: flex;
+  column-gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.nav__link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Conteúdo do cabeçalho */
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  padding: 0 80px;
+}
+
+/* Título */
+.header__title {
+  max-width: 635px;
+  font-size: 62px;
+  font-weight: 500;
+  line-height: 76px;
+  margin: 40px 0 20px 0;
+  margin-top: 128px;
+}
+
+/* Descrição */
+.header__description {
+  max-width: 515px;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+  margin-top: 32px;
+}
+
+/* Imagem (futura) */
+.header__image {
+  width: 100%;
+  max-width: 636px;
+  height: auto;
+}
+
+/* Rodapé do cabeçalho */
+.header__footer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 80px 40px;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__address {
+  margin: 0;
+  color: #838383;
+  font-size: 14px;
+}
+
+/* Seção dos cards da equipe */
+.staff {
+  /* Imagem de fundo para a seção */
+  background-image: url("../images/staff_picks_background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px; /* Forçcar espaço para o título - Desliza "Escolhas da Equipe" para baixo */
+  padding-bottom: 40px; /* Forçar espaço para o rodapé */
+}
+
+.staff__title {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 68px;
+}
+
+.staff__subtitle {
+  text-align: center;
+  color: #ffffff;
+}
+
+.staff__cards {
+  max-width: 760px;
+  margin: 68px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px 40px;
+  list-style-type: none;
+  padding: 0; /* Remove padding padrão da UL */
+  padding-left: 0; /* Garante remoção do recuo à esquerda */
+}
+
+.card {
+  width: 360px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px;
+}
+
+.card__text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 40px;
+}
+
+.card__footer {
+  margin-top: auto;
+  font-size: 14px;
+  color: #838383;
+  margin-left: 40px;
+}
