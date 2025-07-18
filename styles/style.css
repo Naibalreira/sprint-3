@@ -41,7 +41,7 @@
 .nav__links {
   display: flex;
   column-gap: 20px;
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
   margin-top: 8px;
@@ -117,28 +117,35 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 40px; /* Forçcar espaço para o título - Desliza "Escolhas da Equipe" para baixo */
-  padding-bottom: 40px; /* Forçar espaço para o rodapé */
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .staff__title {
   text-align: center;
   color: #ffffff;
   margin-top: 68px;
+  font-size: 32px; /* adicionado */
+  font-weight: bold; /* adicionado */
+  line-height: 1.2; /* adicionado */
+  margin-bottom: 16px; /* adicionado */
 }
 
 .staff__subtitle {
   text-align: center;
   color: #ffffff;
+  font-size: 18px; /* adicionado */
+  line-height: 1.4; /* adicionado */
+  margin: 0 0 40px 0; /* adicionado */
 }
 
 .staff__cards {
   max-width: 760px;
-  margin: 68px auto;
+  margin: 68px auto 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 40px 40px;
+  gap: 40px
   list-style-type: none;
   padding: 0; /* Remove padding padrão da UL */
   padding-left: 0; /* Garante remoção do recuo à esquerda */
@@ -149,32 +156,34 @@
   height: 420px;
   display: flex;
   flex-direction: column;
+  background-color: #ffffff; /* movido aqui */
+  border-radius: 3px;
+  padding: 20px; /* adicionado */
 }
 
 .card__content {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  background-color: #ffffff;
-  border-radius: 3px;
 }
 
 .card__title {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  margin: 40px;
+  line-height: 1.2; /* adicionado */
+  margin: 20px 40px;
 }
 
 .card__text {
   font-size: 16px;
   line-height: 1.5;
-  margin: 0 40px;
+  margin: 0 40px 20px;
 }
 
 .card__footer {
-  margin-top: auto;
   font-size: 14px;
   color: #838383;
-  margin-left: 40px;
+  margin: auto 40px 20px;
+  line-height: 1.4;
 }
